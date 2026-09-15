@@ -16,8 +16,8 @@ const facts = [
 
 export function Hero() {
   return (
-    <section className="flex-1 px-4 sm:px-6 pt-20 sm:pt-24 pb-4 sm:pb-6 flex items-end">
-      <div className="relative w-full rounded-2xl overflow-hidden bg-[#dfe9ee]" style={{ height: 'calc(100svh - 104px)', minHeight: 560 }}>
+    <section className="flex-1 px-4 sm:px-6 pt-[76px] sm:pt-24 pb-4 sm:pb-6 flex items-start sm:items-end">
+      <div className="relative w-full rounded-2xl overflow-hidden bg-[#dfe9ee]" style={{ height: 'calc(100svh - 92px)', minHeight: 560 }}>
         <BgVideo src={media('hero.mp4')} poster={media('hero.webp')} className="absolute inset-0 w-full h-full object-cover object-[72%_center] md:object-center" />
         {/* Мягкая засветка слева, чтобы текст читался на любом кадре */}
         <div className="absolute inset-0 bg-gradient-to-r from-white/85 via-white/55 to-white/15 md:from-white/65 md:via-white/25 md:to-transparent" />

@@ -19,7 +19,7 @@ export default function App() {
   useReveal()
   return (
     <div id="top" className="flex flex-col bg-page">
-      <div className="min-h-screen flex flex-col overflow-hidden relative">
+      <div className="min-h-[100svh] flex flex-col overflow-hidden relative">
         <Navbar />
         <Hero />
       </div>
