@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { ArrowRight, ChevronLeft, ChevronRight, X } from 'lucide-react'
 import { Eyebrow, H2, scrollTo } from './ui'
+import { BgVideo } from './BgVideo'
 import { media, works } from '../data/site'
 
 export function Works() {
@@ -28,9 +29,9 @@ export function Works() {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
           {works.map((w, i) => (
-            <button key={w.img} onClick={() => setOpen(i)} className="reveal group relative rounded-2xl overflow-hidden aspect-[3/4] bg-white text-left" style={{ transitionDelay: `${(i % 4) * 60}ms` }}>
-              <img src={media(w.img)} alt={`${w.title} — ${w.place}`} loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.05]" />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/10 to-transparent" />
+            <button key={w.img} onClick={() => setOpen(i)} className="reveal group relative rounded-2xl overflow-hidden aspect-[3/4] bg-deep-2 text-left" style={{ transitionDelay: `${(i % 4) * 60}ms` }}>
+              <img src={media(w.img)} alt={`${w.title} — ${w.place}`} loading="eager" decoding="async" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.05]" />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/40 to-ink/5" />
               <div className="absolute inset-x-0 bottom-0 p-4 md:p-5">
                 <p className="text-white font-medium leading-snug text-sm md:text-base">{w.title}</p>
                 <p className="text-white/60 text-xs md:text-sm mt-1">{w.place}</p>
@@ -41,10 +42,8 @@ export function Works() {
 
         {/* B2B card with the aerial video */}
         <div className="reveal mt-4 relative rounded-3xl overflow-hidden min-h-[420px] md:min-h-[520px] bg-deep-2">
-          <video autoPlay muted loop playsInline preload="metadata" poster={media('aerial.webp')} className="absolute inset-0 w-full h-full object-cover">
-            <source src={media('aerial.mp4')} type="video/mp4" />
-          </video>
-          <div className="absolute inset-0 bg-gradient-to-r from-ink/80 via-ink/40 to-transparent" />
+          <BgVideo src={media('aerial.mp4')} poster={media('aerial.webp')} className="absolute inset-0 w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/65 to-ink/25 md:bg-gradient-to-r md:from-ink/85 md:via-ink/50 md:to-ink/10" />
           <div className="relative z-10 p-7 sm:p-10 md:p-12 flex flex-col justify-end h-full min-h-[420px] md:min-h-[520px]">
             <p className="text-white/60 text-sm mb-2">Для бизнеса и СНТ</p>
             <h3 className="text-white text-3xl md:text-5xl font-medium leading-tight mb-5 max-w-xl" style={{ letterSpacing: '-0.03em' }}>Скважины для ферм, производств и посёлков</h3>

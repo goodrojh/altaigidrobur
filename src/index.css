@@ -45,3 +45,7 @@ input[type="range"].slider::-moz-range-thumb { width: 26px; height: 26px; border
 /* Well diagram */
 .well-layer { transition: opacity .25s ease, filter .25s ease; cursor: pointer; }
 .well-layer.dim { opacity: .35; }
+
+/* Фоновые видео: прячем нативный значок play на мобильных, если autoplay задержался */
+.bg-video { pointer-events: none; }
+.bg-video::-webkit-media-controls, .bg-video::-webkit-media-controls-start-playback-button, .bg-video::-webkit-media-controls-panel { display: none !important; -webkit-appearance: none; opacity: 0; }

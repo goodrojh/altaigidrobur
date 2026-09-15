@@ -27,7 +27,7 @@ export function Footer() {
             ))}
           </div>
         </div>
-        <div className="mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between gap-2 text-sm text-white/40">
+        <div className="mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between gap-2 text-sm text-white/55">
           <span>© {new Date().getFullYear()} {site.name}. {site.region}.</span>
           <span>Instagram принадлежит Meta, признанной экстремистской и запрещённой в РФ.</span>
         </div>

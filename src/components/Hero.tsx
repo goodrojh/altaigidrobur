@@ -1,5 +1,6 @@
 import { Phone, Droplets } from 'lucide-react'
 import { PillButton, scrollTo } from './ui'
+import { BgVideo } from './BgVideo'
 import { media, site } from '../data/site'
 import { pricing } from '../data/pricing'
 
@@ -17,16 +18,10 @@ export function Hero() {
   return (
     <section className="flex-1 px-4 sm:px-6 pt-20 sm:pt-24 pb-4 sm:pb-6 flex items-end">
       <div className="relative w-full rounded-2xl overflow-hidden bg-[#dfe9ee]" style={{ height: 'calc(100svh - 104px)', minHeight: 560 }}>
-        <video
-          autoPlay muted loop playsInline preload="metadata"
-          poster={media('hero.webp')}
-          className="absolute inset-0 w-full h-full object-cover object-[72%_center] md:object-center"
-        >
-          <source src={media('hero.mp4')} type="video/mp4" />
-        </video>
+        <BgVideo src={media('hero.mp4')} poster={media('hero.webp')} className="absolute inset-0 w-full h-full object-cover object-[72%_center] md:object-center" />
         {/* Мягкая засветка слева, чтобы текст читался на любом кадре */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white/70 via-white/30 to-transparent md:from-white/55 md:via-white/10" />
-        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white/60 to-transparent md:hidden" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white/85 via-white/55 to-white/15 md:from-white/65 md:via-white/25 md:to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-56 bg-gradient-to-t from-white/80 to-transparent md:hidden" />
 
         <div className="relative z-10 flex flex-col items-start justify-start h-full p-6 sm:p-10 md:p-12 pt-10 sm:pt-16 md:pt-28">
           <p className="inline-flex items-center gap-2 text-ink/70 text-sm mb-5 bg-white/70 backdrop-blur px-3.5 py-1.5 rounded-full">
@@ -50,7 +45,7 @@ export function Hero() {
             <div className="w-full max-w-md overflow-hidden" aria-hidden="true">
               <div className="marquee-track">
                 {[...facts, ...facts].map((f, i) => (
-                  <span key={i} className="mx-7 shrink-0 text-ink/60 whitespace-nowrap" style={f.s}>{f.t}</span>
+                  <span key={i} className="mx-7 shrink-0 text-ink/75 whitespace-nowrap" style={f.s}>{f.t}</span>
                 ))}
               </div>
             </div>

@@ -22,7 +22,7 @@ export function AreasMarquee() {
         <div className="md:col-span-3 overflow-hidden" aria-label="География работ">
           <div className="backers-track">
             {items.map((a, i) => (
-              <span key={i} className="mx-10 shrink-0 text-ink/50 whitespace-nowrap" style={styles[i % styles.length]}>{a}</span>
+              <span key={i} className="mx-10 shrink-0 text-ink/70 whitespace-nowrap" style={styles[i % styles.length]}>{a}</span>
             ))}
           </div>
         </div>

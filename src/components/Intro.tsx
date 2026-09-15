@@ -41,7 +41,7 @@ export function Intro() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           <div className="reveal lg:col-span-2 rounded-2xl overflow-hidden relative min-h-80 flex flex-col justify-between p-7"
             style={{ backgroundImage: `url(${media('water.webp')})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-            <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-white/20 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-white/55 to-white/30" />
             <h3 className="relative text-ink text-2xl font-medium leading-snug" style={{ letterSpacing: '-0.02em' }}>Вода, которую хочется пить</h3>
             <p className="relative text-ink/75 text-base max-w-xs">
               Берём воду на анализ и по результатам подбираем фильтрацию, чтобы вода из вашей скважины была максимально полезной.

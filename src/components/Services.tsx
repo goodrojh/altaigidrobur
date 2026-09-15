@@ -31,7 +31,7 @@ export function Services() {
             <img key={it.id} src={media(it.image)} alt="" loading="lazy"
               className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${i === active ? 'opacity-100' : 'opacity-0'}`} />
           ))}
-          <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/30 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-ink/95 via-ink/75 to-ink/25" />
           <div className="relative z-10 p-7 sm:p-10 md:p-12 flex flex-col justify-end h-full min-h-[560px] md:min-h-[720px]">
             <h3 className="text-white text-4xl md:text-5xl font-medium leading-tight mb-5" style={{ letterSpacing: '-0.03em' }}>{s.title}</h3>
             <p className="text-white/80 text-base max-w-md mb-6">{s.text}</p>

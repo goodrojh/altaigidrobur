@@ -36,7 +36,7 @@ export function Calculator({ onRequest }: { onRequest: (summary: string) => void
               </div>
               <input id="depth" type="range" min={site.depthMin} max={site.depthMax} step={1} value={depth}
                 onChange={e => setDepth(Number(e.target.value))} className="slider w-full" style={{ ['--pct' as string]: `${pct}%` }} />
-              <div className="flex justify-between text-xs text-ink/40 mt-2"><span>{site.depthMin} м</span><span>60 м</span><span>80 м</span><span>{site.depthMax} м</span></div>
+              <div className="flex justify-between text-xs text-ink/55 mt-2"><span>{site.depthMin} м</span><span>60 м</span><span>80 м</span><span>{site.depthMax} м</span></div>
               <div className="mt-4 flex flex-wrap gap-2 text-sm">
                 <span className="bg-aqua-light text-deep px-3 py-1.5 rounded-full">{est.rig}</span>
                 <span className="bg-sand-light text-ink px-3 py-1.5 rounded-full">{est.casing}</span>

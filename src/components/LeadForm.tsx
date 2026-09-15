@@ -39,7 +39,7 @@ export function LeadForm({ prefill }: { prefill: string }) {
       <div className="max-w-[88rem] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="reveal relative rounded-3xl overflow-hidden min-h-[380px] lg:min-h-full bg-deep-2">
           <img src={media('master.webp')} alt="Мастер АлтайГидроБур с обсадной трубой" loading="lazy" className="absolute inset-0 w-full h-full object-cover object-[center_30%]" />
-          <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/20 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-ink/95 via-ink/75 to-ink/25" />
           <div className="relative z-10 p-7 sm:p-10 md:p-12 flex flex-col justify-end h-full min-h-[380px]">
             <p className="text-white/60 text-sm mb-2">Бесплатная консультация</p>
             <h2 className="text-white text-4xl md:text-5xl font-medium leading-tight mb-4" style={{ letterSpacing: '-0.03em' }}>Закажите скважину — получите лучшее предложение сезона</h2>
@@ -80,7 +80,7 @@ export function LeadForm({ prefill }: { prefill: string }) {
                 <a href={site.telegram} target="_blank" rel="noopener" className="inline-flex items-center gap-2 bg-page text-ink font-medium px-5 py-3 rounded-full hover:bg-aqua-light transition-colors"><Send className="w-4 h-4" /> Telegram</a>
                 <a href={site.whatsapp} target="_blank" rel="noopener" className="inline-flex items-center gap-2 bg-page text-ink font-medium px-5 py-3 rounded-full hover:bg-aqua-light transition-colors"><MessageCircle className="w-4 h-4" /> WhatsApp</a>
               </div>
-              <p className="flex items-center gap-2 text-xs text-ink/40 mt-2"><ShieldCheck className="w-4 h-4" /> Мы не передаём ваши данные третьим лицам.</p>
+              <p className="flex items-center gap-2 text-xs text-ink/55 mt-2"><ShieldCheck className="w-4 h-4" /> Мы не передаём ваши данные третьим лицам.</p>
             </form>
           )}
         </div>
