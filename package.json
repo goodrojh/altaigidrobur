@@ -9,7 +9,7 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist --nojekyll"
+    "deploy": "gh-pages -d dist --nojekyll -u \"goodrojh <vladhalubets@gmail.com>\""
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
